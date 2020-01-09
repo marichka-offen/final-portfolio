@@ -1,10 +1,10 @@
 <template>
   <footer>
-    <a href="https://www.facebook.com/marichka.offen" target="_blank">
+    <!-- <a href="https://www.facebook.com/marichka.offen" target="_blank">
       <svg class="footer__icon">
         <use xlink:href="../assets/img/social_media_logos.svg#facebook" />
       </svg>
-    </a>
+    </a> -->
     <a href="https://www.linkedin.com/in/marichka-offen" target="_blank">
       <svg class="footer__icon">
         <use xlink:href="../assets/img/social_media_logos.svg#linkedin" />
@@ -23,4 +23,19 @@
   </footer>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+footer {
+  display: flex;
+  padding-left: 2.4rem;
+}
+svg {
+  width: 4.8rem;
+  height: 2.4rem;
+  transition: all 0.5s;
+
+  &:hover {
+    fill: #c0ca33;
+    transform: scale(1.2);
+  }
+}
+</style>
