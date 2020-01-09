@@ -18,6 +18,9 @@ export default {
 </script>
 
 <style lang="scss">
+// IMPORTS
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700&display=swap&subset=cyrillic-ext,latin-ext");
+
 // RESET STYLE SETTINGS
 html {
   -webkit-text-size-adjust: 100%;
@@ -29,6 +32,7 @@ html {
 body {
   margin: 0;
   font-size: 2.4rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #app {
