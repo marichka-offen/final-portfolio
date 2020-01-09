@@ -1,8 +1,6 @@
 <template>
   <div id="app" class="grid">
-    <nav class="grid__nav">
-      <Navbar />
-    </nav>
+    <Navbar class="grid__nav" />
     <main class="grid__main">
       <router-view />
     </main>
@@ -46,11 +44,11 @@ body {
   &__nav {
     position: sticky;
     width: 350px;
-    background-color: bisque;
+    border: 2px solid red;
   }
 
   &__main {
-    background-color: aquamarine;
+    border: 2px solid blue;
   }
 }
 </style>
