@@ -36,6 +36,33 @@
     "type": "website"
   },
   {
+    "id": "natours",
+    "title": "Natours",
+    "description": "This project is first in series of mock-ups for the Advanced CSS and Sass online course.",
+    "stack": "HTML | SCSS | Animation | BEM | Grid",
+    "weblink": "http://natours-learning-experience.surge.sh/",
+    "codelink": "https://github.com/marichka-offen/CSS-project-1",
+    "type": "misc"
+  },
+  {
+    "id": "trillo",
+    "title": "Trillo",
+    "description": "Second project in series of mock-ups for the Advanced CSS and Sass online course.",
+    "stack": "   HTML | SCSS | Animation | BEM | Flex",
+    "weblink": "http://trillo-learning-experience.surge.sh/",
+    "codelink": "https://github.com/marichka-offen/CSS-project-2",
+    "type": "misc"
+  },
+  {
+    "id": "nexter",
+    "title": "Nexter",
+    "description": "Third project in series of mock-ups for the Advanced CSS and Sass online course.",
+    "stack": "HTML | SCSS | Animation | BEM | Grid",
+    "weblink": "http://nexter-learning-experience.surge.sh/",
+    "codelink": "https://github.com/marichka-offen/CSS-project-3",
+    "type": "misc"
+  },
+  {
     "id": "node-farm",
     "title": "Node Farm",
     "description": "Lorem ipsum dolor amet man bun church-key brooklyn everyday carry. Poke pork belly dreamcatcher, vegan small batch viral man braid yr put a bird on it selfies banh mi synth. Bushwick wolf plaid synth fixie cred typewriter unicorn locavore stumptown prism pok pok ethical pickled fashion axe. Crucifix cred thundercats hashtag 90's. Tacos copper mug asymmetrical health goth woke kombucha green juice skateboard brooklyn letterpress art party la croix. Yr twee try-hard schlitz small batch asymmetrical mlkshk offal neutra kitsch unicorn kombucha activated charcoal post-ironic prism.",
@@ -49,7 +76,7 @@
     "title": "Redux Counter",
     "description": "Deep v typewriter chambray, ramps trust fund gluten-free poutine vice. Mixtape butcher meh, godard venmo next level four loko 8-bit blog kinfolk chicharrones. Street art quinoa next level, echo park waistcoat 3 wolf moon master cleanse forage selfies ramps. Butcher seitan slow-carb, letterpress glossier art party kickstarter distillery normcore yr coloring book. You probably haven't heard of them skateboard sriracha shabby chic cronut chambray.",
     "stack": "React | Redux | Bootstrap",
-    "weblink": "https://gdcf2.csb.app/",
+    "weblink": "https://codesandbox.io/s/counter-redux-gdcf2",
     "codelink": "https://codesandbox.io/s/counter-redux-gdcf2",
     "type": "misc"
   },
@@ -58,7 +85,7 @@
     "title": "Redux Task Manager",
     "description": "Deep v typewriter chambray, ramps trust fund gluten-free poutine vice. Mixtape butcher meh, godard venmo next level four loko 8-bit blog kinfolk chicharrones. Street art quinoa next level, echo park waistcoat 3 wolf moon master cleanse forage selfies ramps. Butcher seitan slow-carb, letterpress glossier art party kickstarter distillery normcore yr coloring book. You probably haven't heard of them skateboard sriracha shabby chic cronut chambray.",
     "stack": "React | Redux",
-    "weblink": "https://r5hrx.csb.app/",
+    "weblink": "https://codesandbox.io/s/task-manager-redux-r5hrx",
     "codelink": "https://codesandbox.io/s/task-manager-redux-r5hrx",
     "type": "misc"
   },
