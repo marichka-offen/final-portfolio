@@ -30,8 +30,8 @@ html {
 }
 
 body {
-  margin: 0;
-  font-size: 2.4rem;
+  margin: 5rem;
+  font-size: 2rem;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -40,19 +40,42 @@ body {
   height: 100vh;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 2rem auto;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
 // GRID
 .grid {
   display: grid;
   grid-template-columns: max-content auto;
+  position: relative;
+  overflow: visible;
 
   &__nav {
     position: sticky;
     width: 350px;
-    border: 2px solid red;
+    top: 0;
+    height: min-content;
   }
 
   &__main {
-    border: 2px solid blue;
+    padding: 5rem;
   }
 }
 </style>
