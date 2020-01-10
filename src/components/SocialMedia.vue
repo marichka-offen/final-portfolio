@@ -7,17 +7,26 @@
     </a> -->
     <a href="https://www.linkedin.com/in/marichka-offen" target="_blank">
       <svg class="footer__icon">
-        <use xlink:href="../assets/img/social_media_logos.svg#linkedin" />
+        <use
+          xlink:href="../assets/img/social_media_logos.svg#linkedin"
+          title="link to linkedin"
+        />
       </svg>
     </a>
     <a href="https://twitter.com/MarichkaOffen" target="_blank">
       <svg class="footer__icon">
-        <use xlink:href="../assets/img/social_media_logos.svg#twitter" />
+        <use
+          xlink:href="../assets/img/social_media_logos.svg#twitter"
+          title="link to twitter"
+        />
       </svg>
     </a>
     <a href="https://github.com/marichka-offen" target="_blank">
       <svg class="footer__icon">
-        <use xlink:href="../assets/img/social_media_logos.svg#github" />
+        <use
+          xlink:href="../assets/img/social_media_logos.svg#github"
+          title="link to github"
+        />
       </svg>
     </a>
   </footer>

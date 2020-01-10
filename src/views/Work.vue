@@ -18,22 +18,22 @@
     <div class="tab-container">
       <!-- GAMES -->
       <div v-on:click="onGames" class="tab tab--game">
-        <a>Games</a>
+        <button>Games</button>
       </div>
 
       <!-- APPS -->
       <div v-on:click="onApps" class="tab tab--app">
-        <a>Apps</a>
+        <button>Apps</button>
       </div>
 
       <!-- WEBSITES -->
       <div v-on:click="onWebsites" class="tab tab--website">
-        <a>Websites</a>
+        <button>Websites</button>
       </div>
 
       <!-- MISC -->
       <div v-on:click="onMisc" class="tab tab--misc">
-        <a>Misc</a>
+        <button>Misc</button>
       </div>
     </div>
 
@@ -72,7 +72,7 @@ export default {
   justify-content: space-between;
   text-transform: uppercase;
   font-size: 1.5rem;
-  //   margin: 3em 0;
+  margin: 3em 0;
 
   & > * {
     width: 250px;

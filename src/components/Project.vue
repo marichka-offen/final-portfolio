@@ -11,8 +11,19 @@
       <div class="project__description">
         <h3 class="heading-tertiary project__title">{{ project.title }}</h3>
         <div class="project__links">
-          <a :href="project.weblink" target="_blank">link</a> –
-          <a :href="project.codelink" target="_blank">code</a>
+          <a
+            :href="project.weblink"
+            target="_blank"
+            :aria-label="project.ariaLabelLink"
+            >link</a
+          >
+          –
+          <a
+            :href="project.codelink"
+            target="_blank"
+            :aria-label="project.ariaLabelCode"
+            >code</a
+          >
         </div>
         <p>{{ project.description }}</p>
       </div>
@@ -33,6 +44,7 @@ export default {
   display: flex;
 
   &__title {
+    text-transform: uppercase;
   }
 
   &__info {
