@@ -2,7 +2,9 @@
   <div id="app" class="grid">
     <Navbar class="grid__nav" />
     <main class="grid__main">
-      <router-view />
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </main>
   </div>
 </template>
@@ -22,6 +24,12 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700&display=swap&subset=cyrillic-ext,latin-ext");
 
 // RESET STYLE SETTINGS
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -31,6 +39,7 @@ html {
 
 body {
   margin: 5rem;
+  color: #263238;
   font-size: 2rem;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -49,10 +58,16 @@ a {
 h2 {
   font-size: 5rem;
   text-align: center;
-  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin: 2rem auto;
+  font-weight: 400;
+  //   color: #fff;
+  //   text-shadow: -2px 0 rgba(37, 49, 55, 0.8), 0 -2px rgba(37, 49, 55, 0.8),
+  //     2px 0 rgba(37, 49, 55, 0.8), 0 2px rgba(37, 49, 55, 0.8),
+  //     2px 2px rgba(37, 49, 55, 0.8), -2px -2px rgba(37, 49, 55, 0.8),
+  //     -2px 2px rgba(37, 49, 55, 0.8), 2px -2px rgba(37, 49, 55, 0.8),
+  //     5px 5px #c0ca33;
 }
 
 p {
@@ -77,5 +92,17 @@ p {
   &__main {
     padding: 5rem;
   }
+}
+
+// TRANSITION
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease-out;
+}
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
