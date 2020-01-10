@@ -17,22 +17,42 @@
     </p>
     <div class="tab-container">
       <!-- GAMES -->
-      <div v-on:click="onGames" class="tab tab--game">
+      <div
+        v-on:click="onGames"
+        class="tab tab--game {enlarge:selected == 1}"
+        @click="selected = 1"
+        :class="{ enlarge: selected == 1 }"
+      >
         <button>Games</button>
       </div>
 
       <!-- APPS -->
-      <div v-on:click="onApps" class="tab tab--app">
+      <div
+        v-on:click="onApps"
+        class="tab tab--app"
+        @click="selected = 2"
+        :class="{ enlarge: selected == 2 }"
+      >
         <button>Apps</button>
       </div>
 
       <!-- WEBSITES -->
-      <div v-on:click="onWebsites" class="tab tab--website">
+      <div
+        v-on:click="onWebsites"
+        class="tab tab--website"
+        @click="selected = 3"
+        :class="{ enlarge: selected == 3 }"
+      >
         <button>Websites</button>
       </div>
 
       <!-- MISC -->
-      <div v-on:click="onMisc" class="tab tab--misc">
+      <div
+        v-on:click="onMisc"
+        class="tab tab--misc"
+        @click="selected = 4"
+        :class="{ enlarge: selected == 4 }"
+      >
         <button>Misc</button>
       </div>
     </div>
@@ -48,6 +68,11 @@ import Project from "../components/Project";
 import { mapState } from "vuex";
 export default {
   components: { Project },
+  data: function() {
+    return {
+      selected: 1
+    };
+  },
   computed: mapState(["type"]),
   methods: {
     onGames() {
@@ -67,6 +92,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.enlarge {
+  transform: scale(1.2);
+}
 .tab-container {
   display: flex;
   justify-content: space-between;
@@ -75,20 +103,30 @@ export default {
   margin: 3em 0;
 
   & > * {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 200px;
     font-weight: 300;
     position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
     & > * {
-      outline: 1px solid #fff;
+      outline: 2px solid #c0ca33;
       outline-offset: 15px;
       background-color: rgba(#fff, 0.85);
+      border: none;
+      padding: 1.5rem 3rem;
+      font-size: 2.4rem;
+      text-transform: lowercase;
+      font-weight: 300;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      padding: 0.5em 1em;
     }
   }
 }
