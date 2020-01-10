@@ -2,6 +2,8 @@
   {
     "id": "lets-hang",
     "title": "Let's Hang",
+    "ariaLabelLink": "link to Let's Hang game",
+    "ariaLabelCode": "link to the code of Let's Hang game",
     "description": "Let's Hang, or Hangman is a classic word guessing game in which you must guess as many hidden words as you can before you run out of tries! Originaly the game was created as a project #1 for GA WDI program, had low functionality and lots of bugs. Hours of studying and few months after the game was re-written from scratch and now can impress with the full functionality, attractive design and clean code. The game is based on simple JavaScript logic with the use of words-API for dictionary purposes. Basic SVG animation.",
     "stack": "HTML | CSS | JavaScript | SVG | Animation | API",
     "weblink": "https://lets-hang.netlify.com/",
@@ -11,6 +13,8 @@
   {
     "id": "pig-game",
     "title": "Pig Game",
+    "ariaLabelLink": "link to Pig Game game",
+    "ariaLabelCode": "link to the code of Pig Game game",
     "description": "Pig Game is a simple jeopardy dice game, where the dominant type of decision is whether or not to jeopardize previous gains by rolling for potential greater gains. The object is to be the first to meet or exceed a goal score. The game was created as project for Complete Java Script Course and was a complete success from the very beginning. I had an opportunity to thoroughly discover and enjoy the simplicity of JavaScript while working on the logic of the game, and play with CSS while following the simple required disigne.",
     "stack": "HTML | CSS | JavaScript | OOCSS",
     "weblink": "http://pig-game-learning-experience.surge.sh/",
@@ -20,6 +24,8 @@
   {
     "id": "fridgify",
     "title": "Fridgify",
+    "ariaLabelLink": "link to Fridgify app",
+    "ariaLabelCode": "link to the code of Fridgify app",
     "description": "Welcome to Fridgify, an online refrigerator where you can inventory what's in your actual fridge. Have you ever been at a party and wanted to know if you had Kraft singles in your fridge to make grilled cheese when you get home? Well now you will! With Fridgify, you'll have a visual fridge interface to add the name, quantity, expiration date of anything in your fridge, and categorize them by food group and fridge or freezer. You'll never forget where you left that slice of ham again! This project is the product of efforts of two young ambitious web developers: Sathya Ram and me.",
     "stack": "React | CSS | JavaScript | Node | Express | Mongoose",
     "weblink": "https://fridgify.surge.sh/",
@@ -29,6 +35,8 @@
   {
     "id": "history-reconsidered",
     "title": "History Reconsidered",
+    "ariaLabelLink": "link to History Reconsidered website",
+    "ariaLabelCode": "link to the code of History Reconsidered website",
     "description": "History Reconsidered is my biggest project so far. It's a fully functioning history blog. Building this website was my personal challenge and a great learning oportunity, as I chose to build it using Vue.js framework for the first time.",
     "stack": "Vue | SASS | JavaScript | Animation",
     "weblink": "https://www.historyreconsidered.net/",
@@ -38,6 +46,8 @@
   {
     "id": "natours",
     "title": "Natours",
+    "ariaLabelLink": "link to Natours mock website",
+    "ariaLabelCode": "link to the code of Natours mock website",
     "description": "This project is first in series of mock-ups for the Advanced CSS and Sass online course.",
     "stack": "HTML | SCSS | Animation | BEM | Grid",
     "weblink": "http://natours-learning-experience.surge.sh/",
@@ -47,6 +57,8 @@
   {
     "id": "trillo",
     "title": "Trillo",
+    "ariaLabelLink": "link to Trillo mock website",
+    "ariaLabelCode": "link to the code of Trillo mock website",
     "description": "Second project in series of mock-ups for the Advanced CSS and Sass online course.",
     "stack": "   HTML | SCSS | Animation | BEM | Flex",
     "weblink": "http://trillo-learning-experience.surge.sh/",
@@ -56,6 +68,8 @@
   {
     "id": "nexter",
     "title": "Nexter",
+    "ariaLabelLink": "link to Nexter mock website",
+    "ariaLabelCode": "link to the code of Nexter mock website",
     "description": "Third project in series of mock-ups for the Advanced CSS and Sass online course.",
     "stack": "HTML | SCSS | Animation | BEM | Grid",
     "weblink": "http://nexter-learning-experience.surge.sh/",
@@ -65,6 +79,8 @@
   {
     "id": "node-farm",
     "title": "Node Farm",
+    "ariaLabelLink": "link to Node Farm mock website",
+    "ariaLabelCode": "link to the code of Node Farm mock website",
     "description": "Lorem ipsum dolor amet man bun church-key brooklyn everyday carry. Poke pork belly dreamcatcher, vegan small batch viral man braid yr put a bird on it selfies banh mi synth. Bushwick wolf plaid synth fixie cred typewriter unicorn locavore stumptown prism pok pok ethical pickled fashion axe. Crucifix cred thundercats hashtag 90's. Tacos copper mug asymmetrical health goth woke kombucha green juice skateboard brooklyn letterpress art party la croix. Yr twee try-hard schlitz small batch asymmetrical mlkshk offal neutra kitsch unicorn kombucha activated charcoal post-ironic prism.",
     "stack": "Node | JavaScript | HTML | CSS",
     "weblink": "https://gqktw.sse.codesandbox.io/",
@@ -74,24 +90,30 @@
   {
     "id": "redux-counter",
     "title": "Redux Counter",
+    "ariaLabelLink": "link to Redux Counter app",
+    "ariaLabelCode": "link to the code of Redux Counter app",
     "description": "Deep v typewriter chambray, ramps trust fund gluten-free poutine vice. Mixtape butcher meh, godard venmo next level four loko 8-bit blog kinfolk chicharrones. Street art quinoa next level, echo park waistcoat 3 wolf moon master cleanse forage selfies ramps. Butcher seitan slow-carb, letterpress glossier art party kickstarter distillery normcore yr coloring book. You probably haven't heard of them skateboard sriracha shabby chic cronut chambray.",
     "stack": "React | Redux | Bootstrap",
     "weblink": "https://codesandbox.io/s/counter-redux-gdcf2",
     "codelink": "https://codesandbox.io/s/counter-redux-gdcf2",
-    "type": "misc"
+    "type": "app"
   },
   {
     "id": "redux-task",
     "title": "Redux Task Manager",
+    "ariaLabelLink": "link to Redux Task Manager app",
+    "ariaLabelCode": "link to the code of Redux Task Manager App app",
     "description": "Deep v typewriter chambray, ramps trust fund gluten-free poutine vice. Mixtape butcher meh, godard venmo next level four loko 8-bit blog kinfolk chicharrones. Street art quinoa next level, echo park waistcoat 3 wolf moon master cleanse forage selfies ramps. Butcher seitan slow-carb, letterpress glossier art party kickstarter distillery normcore yr coloring book. You probably haven't heard of them skateboard sriracha shabby chic cronut chambray.",
     "stack": "React | Redux",
     "weblink": "https://codesandbox.io/s/task-manager-redux-r5hrx",
     "codelink": "https://codesandbox.io/s/task-manager-redux-r5hrx",
-    "type": "misc"
+    "type": "app"
   },
   {
     "id": "portfolio",
     "title": "Portfolio",
+    "ariaLabelLink": "link to Portfolio website",
+    "ariaLabelCode": "link to the code of Portfolio website",
     "description": "Have I just included my portfolio in my portfolio? Yes, absolutely, one hundrer percent. Why? Because its code is as valuable as any other application and helps visitors of my website to know me better as a programmer. The website is built with Vue.js framework and fully styled using SASS syntactical language, using mixins and variables. Moreover, structuraly my SASS files form a separate folder system, so if at any point I decide to change framework, i can just lift my styling and build it in in any other application.",
     "stack": "Vue| Vuex | SASS | Animation",
     "weblink": "https://www.marichkaoffen.com/",
