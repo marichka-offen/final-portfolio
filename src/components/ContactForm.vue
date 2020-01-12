@@ -38,63 +38,63 @@
 </template>
 
 <style lang="scss" scoped>
+$border: solid 2px rgba(#263238, 0.9);
+
+@mixin background {
+  font-size: 1.8rem;
+
+  &:focus {
+    background: rgba(#c0ca33, 0.7);
+    font-size: 2rem;
+  }
+
+  &:focus:invalid {
+    background: rgba(#ef5350, 0.7);
+  }
+
+  &::placeholder {
+    font-size: 1.8rem;
+  }
+}
+
 .form {
-  width: 500px;
-  margin-top: 20px;
+  margin: 0 auto;
+  width: 50rem;
+  box-shadow: 10px 10px #c0ca33;
+  height: max-content;
 
   &--input {
-    width: 470px;
+    width: 100%;
     height: 50px;
     padding: 0px 15px 0px 15px;
-    border: solid 2px black;
+    border: $border;
     border-bottom: none;
     transition: all 0.3s ease-in-out;
     outline: none;
 
-    &:focus {
-      background: rgba(#c0ca33, 0.7);
-    }
-
-    &:focus:invalid {
-      background: rgba(#ef5350, 0.7);
-    }
-
-    &::placeholder {
-      font-size: 1.6rem;
-    }
+    @include background;
   }
 
   &--message {
-    width: 470px;
-    max-width: 470px;
+    width: 100%;
     height: 110px;
     max-height: 110px;
     padding: 15px;
     outline: none;
-    border: solid 2px black;
+    border: $border;
     transition: all 0.3s ease-in-out;
 
-    &:focus {
-      background: rgba(#c0ca33, 0.7);
-    }
-
-    &:focus:invalid {
-      background: rgba(#ef5350, 0.7);
-    }
-
-    &::placeholder {
-      font-size: 1.6rem;
-    }
+    @include background;
   }
 
   &--submit {
-    width: 502px;
+    width: 100%;
     margin: -5px 0px 0px 0px;
     height: 50px;
     cursor: pointer;
-    border: solid 2px black;
+    border: $border;
     border-top: none;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     transition: all 0.3s ease-in-out;
 
     &:focus {
