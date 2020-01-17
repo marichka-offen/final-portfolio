@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(13, 16, 22);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #ffffff;
+}
+
+.title__last,
+.nav-link,
+.skills {
+  color: white !important;
+}
+
+.router-link-exact-active {
+  color: #c0ca33 !important;
+  transition: all 0.7s;
+}
+
+.footer__icon {
+  fill: #fff;
+}

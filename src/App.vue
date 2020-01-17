@@ -1,6 +1,9 @@
 <template>
   <div id="app" class="grid">
+    <img id="switch" @click="themeSwitch" src="/img/light-off.svg" alt="light-bulb" width="50px" />
     <Navbar class="grid__nav" />
+    <!-- <button @click="darkThemeSwitch">Switch Theme</button> -->
+
     <main class="grid__main">
       <transition name="fade" mode="out-in">
         <router-view />
@@ -15,6 +18,36 @@ import Navbar from "./components/Navbar";
 export default {
   components: {
     Navbar
+  },
+  methods: {
+    _addDarkTheme() {
+      let darkThemeLinkEl = document.createElement("link");
+      darkThemeLinkEl.setAttribute("rel", "stylesheet");
+      darkThemeLinkEl.setAttribute("href", "/css/darktheme.css");
+      darkThemeLinkEl.setAttribute("id", "dark-theme-style");
+
+      let docHead = document.querySelector("head");
+      docHead.append(darkThemeLinkEl);
+    },
+    _removeDarkTheme() {
+      let darkThemeLinkEl = document.querySelector("#dark-theme-style");
+      let parentNode = darkThemeLinkEl.parentNode;
+      parentNode.removeChild(darkThemeLinkEl);
+    },
+    themeSwitch() {
+      let darkThemeLinkEl = document.querySelector("#dark-theme-style");
+      if (!darkThemeLinkEl) {
+        document
+          .querySelector("#switch")
+          .setAttribute("src", "/img/light-on.svg");
+        this._addDarkTheme();
+      } else {
+        document
+          .querySelector("#switch")
+          .setAttribute("src", "/img/light-off.svg");
+        this._removeDarkTheme();
+      }
+    }
   }
 };
 </script>
@@ -51,28 +84,36 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #c0ca33;
   cursor: pointer;
 }
 
+@mixin stroke-width($property) {
+  -webkit-text-stroke-width: $property;
+  -moz-text-stroke-width: $property;
+}
+
+@mixin stroke-color($property) {
+  -webkit-text-stroke-color: $property;
+  -moz-text-stroke-color: $property;
+}
+
 h2 {
-  font-size: 5rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
+  font-size: 4.4rem;
+  width: max-content;
+  letter-spacing: 2px;
   margin: 2rem auto;
-  font-weight: 400;
-  //   color: #fff;
-  //   text-shadow: -2px 0 rgba(37, 49, 55, 0.8), 0 -2px rgba(37, 49, 55, 0.8),
-  //     2px 0 rgba(37, 49, 55, 0.8), 0 2px rgba(37, 49, 55, 0.8),
-  //     2px 2px rgba(37, 49, 55, 0.8), -2px -2px rgba(37, 49, 55, 0.8),
-  //     -2px 2px rgba(37, 49, 55, 0.8), 2px -2px rgba(37, 49, 55, 0.8),
-  //     5px 5px #c0ca33;
+  text-transform: uppercase;
+  @include stroke-width(1px);
+  @include stroke-color(#0d1b1e);
+  color: transparent;
+  text-shadow: 5px 3px #c0ca33;
 }
 
 p {
   text-align: justify;
   line-height: 1.8;
+  margin: 1.8rem;
 }
 
 // GRID
@@ -100,9 +141,16 @@ p {
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s 0.1s ease-out;
 }
 .fade-leave-to {
   opacity: 0;
+}
+
+#switch {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
 }
 </style>
