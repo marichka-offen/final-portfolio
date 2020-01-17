@@ -3,23 +3,19 @@
     <h2>My Projects</h2>
     <p>
       This part of my website is devoted to the projects I had an oportunity to
-      work on. I share a little bit of a history behind each of them and also
-      specify the technologies used. I am currently working on expanding this
-      section as lots of my projects either need to be re-uploaded from the
-      private GitHub Enterprise account or refactored to conform to my own
-      standarts (: Anybody and everybody is welcome to contribute to existing
-      projects, identify bugs, propose improvements or just ask questions about
-      any of them. I will be glad to hear feedbacks and constructive criticism,
-      as well as share tools, technics and knowledges that I learnt and obtained
-      while working on them. Each project presented in my gallery has links to
-      GitHub repos and specific issues. Also, if you have any questions, feel
-      free to contact me through contact form down below.
+      work on. I share a little bit of story behind each of them, specify
+      technologies used and provide links to webpages and GitHub repos. I am
+      constantly working on expanding this section as lots of my projects either
+      need to be re-uploaded from the private GitHub Enterprise account or
+      refactored to conform to my own standarts. If you have any questions,
+      please
+      <router-link :to="{ name: 'contact' }">don't hesitate to ask</router-link>.
     </p>
     <div class="tab-container">
       <!-- GAMES -->
       <div
         v-on:click="onGames"
-        class="tab tab--game {enlarge:selected == 1}"
+        class="tab tab--game"
         @click="selected = 1"
         :class="{ enlarge: selected == 1 }"
       >
@@ -56,10 +52,16 @@
         <button>Misc</button>
       </div>
     </div>
-
     <div class="content">
       <Project />
     </div>
+
+    <p>
+      P.S. Anybody and everybody is welcome to contribute to existing projects,
+      identify bugs, propose improvements or just ask questions about any of
+      them. I will be glad to hear feedbacks and constructive criticism, as well
+      as share tools, technics and knowledge I obtained while working on them.
+    </p>
   </section>
 </template>
 
@@ -70,7 +72,7 @@ export default {
   components: { Project },
   data: function() {
     return {
-      selected: 1
+      selected: undefined
     };
   },
   computed: mapState(["type"]),
@@ -92,43 +94,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$outline: 2px solid #c0ca33;
+
 .enlarge {
   transform: scale(1.2);
+  outline: $outline;
+  outline-offset: 15px;
 }
 .tab-container {
   display: flex;
+  //   flex-wrap: wrap;
   justify-content: space-between;
   text-transform: uppercase;
   font-size: 1.5rem;
-  margin: 3em 0;
-
-  & > * {
-    width: 220px;
-    height: 200px;
-    font-weight: 300;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.5s;
-
-    &:hover {
-      transform: scale(1.2);
-    }
-
-    & > * {
-      outline: 2px solid #c0ca33;
-      outline-offset: 15px;
-      background-color: rgba(#fff, 0.85);
-      border: none;
-      padding: 1.5rem 3rem;
-      font-size: 2.4rem;
-      text-transform: lowercase;
-      font-weight: 300;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
+  margin: 5.6rem 0;
 }
 
 .tab {
@@ -137,40 +116,58 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
 
+  width: 13vw;
+  height: 12vw;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+    outline: $outline;
+    animation: outlineBlink 0.7s infinite ease-in-out;
+
+    @keyframes outlineBlink {
+      0% {
+        outline: 2px solid #fff;
+        outline-offset: 3px;
+      }
+      75% {
+        outline: $outline;
+        outline-offset: 3px;
+      }
+    }
+  }
+
+  & > * {
+    outline: $outline;
+    outline-offset: 10px;
+    background-color: rgba(#fff, 0.85);
+    border: none;
+    padding: 1.5rem 3rem;
+    font-size: 2.4rem;
+    text-transform: lowercase;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   &--game {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(#000, 0.2),
-        rgba(#000, 0.2)
-      ),
-      url(../assets/img/games.jpg);
+    background-image: url(../assets/img/games.jpg);
   }
 
   &--app {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(#000, 0.2),
-        rgba(#000, 0.2)
-      ),
-      url(../assets/img/apps.jpg);
+    background-image: url(../assets/img/apps.jpg);
   }
 
   &--website {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(#000, 0.2),
-        rgba(#000, 0.2)
-      ),
-      url(../assets/img/websites.jpg);
+    background-image: url(../assets/img/websites.jpg);
   }
 
   &--misc {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(#000, 0.2),
-        rgba(#000, 0.2)
-      ),
-      url(../assets/img/misc.jpg);
+    background-image: url(../assets/img/misc.jpg);
   }
 }
 </style>
