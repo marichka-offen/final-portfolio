@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="grid">
-    <img id="switch" @click="themeSwitch" src="/img/light-off.svg" alt="light-bulb" width="50px" />
+    <img id="switch" @click="themeSwitch" src="/img/light-on.svg" alt="light-bulb" width="50px" />
     <Navbar class="grid__nav" />
     <!-- <button @click="darkThemeSwitch">Switch Theme</button> -->
 
@@ -39,12 +39,12 @@ export default {
       if (!darkThemeLinkEl) {
         document
           .querySelector("#switch")
-          .setAttribute("src", "/img/light-on.svg");
+          .setAttribute("src", "/img/light-off.svg");
         this._addDarkTheme();
       } else {
         document
           .querySelector("#switch")
-          .setAttribute("src", "/img/light-off.svg");
+          .setAttribute("src", "/img/light-on.svg");
         this._removeDarkTheme();
       }
     }

@@ -47,8 +47,9 @@
     <p>
       Around the time I graduated school I discovered another absolutely amazing
       resource for self-learners –
-      <a href="https://www.udemy.com/">Udemy</a>,
-      which became my Netflix 24/7.
+      <a
+        href="https://www.udemy.com/"
+      >Udemy</a>, which became my Netflix 24/7.
     </p>
     <p>
       I am still learning, but this sums of my progress so far. I fell in love
@@ -94,7 +95,7 @@
           <span class="highlight">JavaScript</span>,
           <span class="highlight">React</span>and
           <span class="highlight">Vue</span>,
-          <span class="highlight">Node</span>and
+          <span class="highlight">Node</span> and
           <span class="highlight">Express</span>,
           <span class="highlight">State Management</span>
         </li>
