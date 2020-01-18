@@ -4,75 +4,12 @@
     <div class="row">
       <div class="column">
         <img src="../assets/img/illustrations/me.svg" style="width:100%" />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
       </div>
       <div class="column">
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
+        <img src="../assets/img/illustrations/sunset.svg" style="width:100%" />
       </div>
       <div class="column">
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-          style="width:100%"
-        />
+        <img src="../assets/img/illustrations/weapons.svg" style="width:100%" />
       </div>
     </div>
   </div>
@@ -106,7 +43,7 @@ export default {};
   background-color: white;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a two column-layout instead of three columns */
 @media screen and (max-width: 1600px) {
   .column {
     flex: 50%;
