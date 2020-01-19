@@ -15,7 +15,7 @@
     "title": "Pig Game",
     "ariaLabelLink": "link to Pig Game game",
     "ariaLabelCode": "link to the code of Pig Game game",
-    "description": "Pig Game is a simple jeopardy dice game, where the dominant type of decision is whether or not to jeopardize previous gains by rolling for potential greater gains. The object is to be the first to meet or exceed a goal score. The game was created as project for Complete Java Script Course and was a complete success from the very beginning. I had an opportunity to thoroughly discover and enjoy the simplicity of JavaScript while working on the logic of the game, and play with CSS while following the simple required disigne.",
+    "description": "Pig Game is a simple jeopardy dice game, where the dominant type of decision is whether or not to jeopardize previous gains by rolling for potential greater gains. The object is to be the first to meet or exceed a goal score. The game was created as project for Complete Java Script Course and was a complete success from the very beginning. I had an opportunity to thoroughly discover and enjoy the simplicity of JavaScript while working on the logic of the game, and play with CSS while following the simple required disign.",
     "stack": "HTML | CSS | JavaScript | OOCSS",
     "weblink": "http://pig-game-learning-experience.surge.sh/",
     "codelink": "https://github.com/marichka-offen/JS-project-1",

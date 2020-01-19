@@ -23,7 +23,7 @@
 
 <style lang="scss" scoped>
 img {
-  max-width: 600px;
+  max-width: 700px;
   margin: 1rem 3rem;
   float: right;
 }

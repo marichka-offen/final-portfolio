@@ -2,7 +2,6 @@
   <div id="app" class="grid">
     <img id="switch" @click="themeSwitch" src="/img/light-on.svg" alt="light-bulb" width="50px" />
     <Navbar class="grid__nav" />
-    <!-- <button @click="darkThemeSwitch">Switch Theme</button> -->
 
     <main class="grid__main">
       <transition name="fade" mode="out-in">
@@ -152,5 +151,29 @@ p {
   right: 2rem;
   top: 2rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 924px) {
+  body {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .grid {
+    grid-template-columns: auto;
+
+    &__nav {
+      position: initial;
+      width: 100%;
+    }
+
+    &__main {
+      padding: 0;
+    }
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
 }
 </style>

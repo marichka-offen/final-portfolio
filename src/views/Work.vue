@@ -13,43 +13,46 @@
     </p>
     <div class="tab-container">
       <!-- GAMES -->
-      <div
-        v-on:click="onGames"
-        class="tab tab--game"
-        @click="selected = 1"
-        :class="{ enlarge: selected == 1 }"
-      >
-        <button>Games</button>
-      </div>
+      <div>
+        <div
+          v-on:click="onGames"
+          class="tab tab--game"
+          @click="selected = 1"
+          :class="{ enlarge: selected == 1 }"
+        >
+          <button>Games</button>
+        </div>
 
-      <!-- APPS -->
-      <div
-        v-on:click="onApps"
-        class="tab tab--app"
-        @click="selected = 2"
-        :class="{ enlarge: selected == 2 }"
-      >
-        <button>Apps</button>
+        <!-- APPS -->
+        <div
+          v-on:click="onApps"
+          class="tab tab--app"
+          @click="selected = 2"
+          :class="{ enlarge: selected == 2 }"
+        >
+          <button>Apps</button>
+        </div>
       </div>
+      <div>
+        <!-- WEBSITES -->
+        <div
+          v-on:click="onWebsites"
+          class="tab tab--website"
+          @click="selected = 3"
+          :class="{ enlarge: selected == 3 }"
+        >
+          <button>Websites</button>
+        </div>
 
-      <!-- WEBSITES -->
-      <div
-        v-on:click="onWebsites"
-        class="tab tab--website"
-        @click="selected = 3"
-        :class="{ enlarge: selected == 3 }"
-      >
-        <button>Websites</button>
-      </div>
-
-      <!-- MISC -->
-      <div
-        v-on:click="onMisc"
-        class="tab tab--misc"
-        @click="selected = 4"
-        :class="{ enlarge: selected == 4 }"
-      >
-        <button>Misc</button>
+        <!-- MISC -->
+        <div
+          v-on:click="onMisc"
+          class="tab tab--misc"
+          @click="selected = 4"
+          :class="{ enlarge: selected == 4 }"
+        >
+          <button>Misc</button>
+        </div>
       </div>
     </div>
     <div class="content">
@@ -103,11 +106,17 @@ $outline: 2px solid #c0ca33;
 }
 .tab-container {
   display: flex;
-  //   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  //   max-width: 100%;
+  justify-content: center;
   text-transform: uppercase;
   font-size: 1.5rem;
-  margin: 5.6rem 0;
+
+  & > * {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .tab {
@@ -115,9 +124,10 @@ $outline: 2px solid #c0ca33;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 5rem 3rem;
 
-  width: 13vw;
-  height: 12vw;
+  width: 200px;
+  height: 200px;
   font-weight: 300;
   cursor: pointer;
   transition: all 0.5s;
@@ -168,6 +178,30 @@ $outline: 2px solid #c0ca33;
 
   &--misc {
     background-image: url(../assets/img/misc.jpg);
+  }
+}
+@media screen and (max-width: 1440px) {
+  .tab {
+    margin: 1rem 2.5rem;
+    height: 150px;
+    width: 150px;
+    outline-offset: 5px;
+
+    & > * {
+      outline: none;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .tab {
+    margin: 0 0 2rem;
+    height: 70px;
+
+    & > * {
+      font-size: 1.6rem;
+      outline-offset: 2px;
+    }
   }
 }
 </style>
