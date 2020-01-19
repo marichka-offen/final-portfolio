@@ -184,11 +184,12 @@ $outline: 2px solid #c0ca33;
   .tab {
     margin: 1rem 2.5rem;
     height: 150px;
-    width: 150px;
+    width: 250px;
     outline-offset: 5px;
-
-    & > * {
-      outline: none;
+    &:hover {
+      transform: scale(1.1);
+      outline: $outline;
+      animation: none;
     }
   }
 }
