@@ -4,7 +4,11 @@
     <div class="row">
       <div class="column">
         <img src="../assets/img/illustrations/me.svg" style="width:100%" />
+<<<<<<< HEAD
         <img src="../assets/img/illustrations/mountains.svg" style="width:100%" />
+=======
+        <img src="../assets/img/mountains/me.svg" style="width:100%" />
+>>>>>>> 75dbdb10c3442f8a43811b37f2c4fa2b02b80c9a
       </div>
       <div class="column">
         <img src="../assets/img/illustrations/sunset.svg" style="width:100%" />
