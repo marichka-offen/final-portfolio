@@ -64,24 +64,32 @@ ul {
   padding-left: 2.4rem;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 924px) {
   ul {
     display: flex;
     justify-content: center;
     padding: 0;
     line-height: 0;
-    font-size: 1.4rem;
-
+    font-size: 2.4rem;
     & > * {
-      padding: 0 0.4rem 0.5rem;
+      padding: 2.4rem;
     }
   }
-
   .router-link-exact-active {
     padding-left: 0rem;
   }
   .address {
     display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  ul {
+    font-size: 1.4rem;
+
+    & > * {
+      padding: 0 0.4rem 0.5rem;
+    }
   }
 }
 </style>

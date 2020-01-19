@@ -153,14 +153,14 @@ p {
   cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 924px) {
   body {
     font-size: 1.6rem;
     margin: 0;
   }
 
   .grid {
-    grid-template-columns: 320px;
+    grid-template-columns: auto;
 
     &__nav {
       position: initial;

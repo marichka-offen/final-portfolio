@@ -65,8 +65,7 @@ export default {
     border-left: 1px solid rgba(#000, 0.1);
   }
 }
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1400px) {
   .project {
     margin: 1 0;
     flex-direction: column;
@@ -74,6 +73,14 @@ export default {
 
     &__img {
       margin: 0;
+      width: 700px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .project {
+    &__img {
       width: 300px;
     }
   }

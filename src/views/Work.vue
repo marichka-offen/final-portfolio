@@ -126,8 +126,8 @@ $outline: 2px solid #c0ca33;
   background-repeat: no-repeat;
   margin: 5rem 3rem;
 
-  width: 230px;
-  height: 230px;
+  width: 200px;
+  height: 200px;
   font-weight: 300;
   cursor: pointer;
   transition: all 0.5s;
@@ -180,8 +180,20 @@ $outline: 2px solid #c0ca33;
     background-image: url(../assets/img/misc.jpg);
   }
 }
+@media screen and (max-width: 1440px) {
+  .tab {
+    margin: 1rem 2.5rem;
+    height: 150px;
+    width: 150px;
+    outline-offset: 5px;
 
-@media screen and (max-width: 320px) {
+    & > * {
+      outline: none;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
   .tab {
     margin: 0 0 2rem;
     height: 70px;

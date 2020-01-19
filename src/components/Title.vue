@@ -42,7 +42,13 @@ span {
     font-weight: 200;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 924px) {
+  .title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
   .title {
     transform: scale(0.8);
   }

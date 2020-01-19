@@ -34,13 +34,13 @@ svg {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 924px) {
   footer {
     justify-content: center;
     padding: 0;
   }
   svg {
-    height: 1.6rem;
+    height: 2rem;
   }
 }
 </style>

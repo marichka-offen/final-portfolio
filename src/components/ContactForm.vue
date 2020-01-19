@@ -54,7 +54,7 @@ $border: solid 2px rgba(#263238, 0.9);
 }
 
 .form {
-  margin: 2rem;
+  margin: 2rem auto;
   max-width: 50rem;
   box-shadow: 10px 10px #c0ca33;
   height: max-content;
