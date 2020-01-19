@@ -1,9 +1,5 @@
 <template>
-  <form
-    class="form"
-    action="https://formspree.io/marichka.offen@gmail.com"
-    method="POST"
-  >
+  <form class="form" action="https://formspree.io/marichka.offen@gmail.com" method="POST">
     <input
       class="form--input"
       type="text"
@@ -58,8 +54,8 @@ $border: solid 2px rgba(#263238, 0.9);
 }
 
 .form {
-  margin: 0 auto;
-  width: 50rem;
+  margin: 2rem;
+  max-width: 50rem;
   box-shadow: 10px 10px #c0ca33;
   height: max-content;
 

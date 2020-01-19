@@ -42,4 +42,9 @@ span {
     font-weight: 200;
   }
 }
+@media screen and (max-width: 320px) {
+  .title {
+    transform: scale(0.8);
+  }
+}
 </style>

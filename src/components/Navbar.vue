@@ -62,7 +62,26 @@ ul {
   font-size: 1.2rem;
   opacity: 0.7;
   padding-left: 2.4rem;
+}
 
-  //   text-transform: uppercase;
+@media screen and (max-width: 320px) {
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    line-height: 0;
+    font-size: 1.4rem;
+
+    & > * {
+      padding: 0 0.4rem 0.5rem;
+    }
+  }
+
+  .router-link-exact-active {
+    padding-left: 0rem;
+  }
+  .address {
+    display: none;
+  }
 }
 </style>

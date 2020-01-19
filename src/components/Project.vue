@@ -2,28 +2,18 @@
   <div>
     <article class="project" v-for="project in projectType" :key="project.id">
       <div class="project__info">
-        <img
-          class="project__img"
-          :alt="project.title"
-          :src="'/img/' + project.id + '.png'"
-        />
+        <img class="project__img" :alt="project.title" :src="'/img/' + project.id + '.png'" />
       </div>
       <div class="project__description">
         <h3 class="heading-tertiary project__title">{{ project.title }}</h3>
         <div class="project__links">
-          <a
-            :href="project.weblink"
-            target="_blank"
-            :aria-label="project.ariaLabelLink"
-            >link</a
-          >
+          <a :href="project.weblink" target="_blank" :aria-label="project.ariaLabelLink">link</a>
           –
           <a
             :href="project.codelink"
             target="_blank"
             :aria-label="project.ariaLabelCode"
-            >code</a
-          >
+          >code</a>
         </div>
         <p>{{ project.description }}</p>
       </div>
@@ -47,20 +37,10 @@ export default {
     text-transform: uppercase;
   }
 
-  &__info {
-    width: 45%;
-    border-right: 1px solid rgba(#000, 0.1);
-    font-weight: 300;
-
-    & > * {
-      font-size: 1.8rem;
-    }
-  }
-
   &__img {
-    margin-top: 6rem;
-    width: 450px;
-    height: 300px;
+    margin: 6rem 2rem;
+    max-width: 450px;
+    max-height: 300px;
     overflow: hidden;
   }
 
@@ -81,8 +61,21 @@ export default {
   }
 
   &__description {
-    width: 55%;
     padding: 0 2rem;
+    border-left: 1px solid rgba(#000, 0.1);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .project {
+    margin: 1 0;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+      margin: 0;
+      width: 300px;
+    }
   }
 }
 </style>
