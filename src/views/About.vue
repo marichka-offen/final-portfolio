@@ -80,45 +80,45 @@
       <ul>
         <li>
           Highly skilled in creating perfomant
-          <span class="highlight">HTML</span>and
-          <span class="highlight">CSS</span>
+          <b class="highlight">HTML</b>and
+          <b class="highlight">CSS</b>
         </li>
         <li>
           Passionate about
-          <span class="highlight">CSS Methodologies</span>,
-          <span class="highlight">CSS Preprocessors</span>,
-          <span class="highlight">Animation</span>and
-          <span class="highlight">SVGs</span>
+          <b class="highlight">CSS Methodologies</b>,
+          <b class="highlight">CSS Preprocessors</b>,
+          <b class="highlight">Animation</b>and
+          <b class="highlight">SVGs</b>
         </li>
         <li>
           Experienced with
-          <span class="highlight">JavaScript</span>,
-          <span class="highlight">React</span>and
-          <span class="highlight">Vue</span>,
-          <span class="highlight">Node</span> and
-          <span class="highlight">Express</span>,
-          <span class="highlight">State Management</span>
+          <b class="highlight">JavaScript</b>,
+          <b class="highlight">React</b>and
+          <b class="highlight">Vue</b>,
+          <b class="highlight">Node</b> and
+          <b class="highlight">Express</b>,
+          <b class="highlight">State Management</b>
         </li>
         <li>
           Proficient with
-          <span class="highlight">Task Runners</span>,
-          <span class="highlight">Package Managers</span>and
-          <span class="highlight">Version Control Systems</span>
+          <b class="highlight">Task Runners</b>,
+          <b class="highlight">Package Managers</b>and
+          <b class="highlight">Version Control Systems</b>
         </li>
         <li>
           Knowledgeable about
-          <span class="highlight">User Experience</span>,
-          <span class="highlight">Accessibility</span>,
-          <span class="highlight">Technical Writing</span>,
-          <span class="highlight">Performance</span>and
-          <span class="highlight">Responsive Web Development</span>
+          <b class="highlight">User Experience</b>,
+          <b class="highlight">Accessibility</b>,
+          <b class="highlight">Technical Writing</b>,
+          <b class="highlight">Performance</b>and
+          <b class="highlight">Responsive Web Development</b>
         </li>
         <li>
           Worked with
-          <span class="highlight">Python</span>,
-          <span class="highlight">Django</span>,
-          <span class="highlight">MongoDB</span>and
-          <span class="highlight">PostgreSQL</span>
+          <b class="highlight">Python</b>,
+          <b class="highlight">Django</b>,
+          <b class="highlight">MongoDB</b>and
+          <b class="highlight">PostgreSQL</b>
         </li>
       </ul>
     </div>
@@ -171,6 +171,7 @@ ul {
   line-height: 1.8;
   min-width: min-content;
 }
+
 h4 {
   margin: 0;
 }

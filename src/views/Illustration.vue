@@ -12,6 +12,7 @@
       </div>
       <div class="column">
         <img src="../assets/img/illustrations/weapons.svg" style="width:100%" />
+        <img src="../assets/img/illustrations/planets.png" style="width:100%" />
       </div>
     </div>
   </div>
