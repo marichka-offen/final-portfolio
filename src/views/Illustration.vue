@@ -5,6 +5,7 @@
       <div class="column">
         <img src="../assets/img/illustrations/me.svg" style="width:100%" />
         <img src="../assets/img/illustrations/mountains.svg" style="width:100%" />
+        <img src="../assets/img/illustrations/swamp.png" style="width:100%" />
       </div>
       <div class="column">
         <img src="../assets/img/illustrations/sunset.svg" style="width:100%" />
