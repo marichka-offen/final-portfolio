@@ -16,6 +16,7 @@
           >code</a>
         </div>
         <p>{{ project.description }}</p>
+        <p>{{ project.stack }}</p>
       </div>
     </article>
   </div>
