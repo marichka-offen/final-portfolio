@@ -80,20 +80,20 @@
       <ul>
         <li>
           Highly skilled in creating perfomant
-          <b class="highlight">HTML</b>and
+          <b class="highlight">HTML</b> and
           <b class="highlight">CSS</b>
         </li>
         <li>
           Passionate about
           <b class="highlight">CSS Methodologies</b>,
           <b class="highlight">CSS Preprocessors</b>,
-          <b class="highlight">Animation</b>and
+          <b class="highlight">Animation</b> and
           <b class="highlight">SVGs</b>
         </li>
         <li>
           Experienced with
           <b class="highlight">JavaScript</b>,
-          <b class="highlight">React</b>and
+          <b class="highlight">React</b> and
           <b class="highlight">Vue</b>,
           <b class="highlight">Node</b> and
           <b class="highlight">Express</b>,
@@ -102,7 +102,7 @@
         <li>
           Proficient with
           <b class="highlight">Task Runners</b>,
-          <b class="highlight">Package Managers</b>and
+          <b class="highlight">Package Managers</b> and
           <b class="highlight">Version Control Systems</b>
         </li>
         <li>
@@ -110,14 +110,14 @@
           <b class="highlight">User Experience</b>,
           <b class="highlight">Accessibility</b>,
           <b class="highlight">Technical Writing</b>,
-          <b class="highlight">Performance</b>and
+          <b class="highlight">Performance</b> and
           <b class="highlight">Responsive Web Development</b>
         </li>
         <li>
           Worked with
           <b class="highlight">Python</b>,
           <b class="highlight">Django</b>,
-          <b class="highlight">MongoDB</b>and
+          <b class="highlight">MongoDB</b> and
           <b class="highlight">PostgreSQL</b>
         </li>
       </ul>
