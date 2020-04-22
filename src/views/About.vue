@@ -62,12 +62,12 @@
       <br />
       <br />The End!
       <br />
-      <br />P.S. I am currently learning Adobe Illustrator and planning to take
+      <br />P.S. I am currently going through C# and .NET at
       the
       <a
-        href="https://edex.adobe.com/en/aca"
-      >Adobe Certified Associate exam</a>
-      to add graphic design to my skillset!
+        https://docs.microsoft.com/en-us/dotnet/"
+      >Microsoft .NET documentation website</a>
+      to add yet another skill to my vast skillset!
     </p>
 
     <div class="skills">
